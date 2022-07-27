@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D30C719828884D1A00ACD1DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C719728884D1A00ACD1DD /* AppDelegate.swift */; };
+		D30C719A28884D1A00ACD1DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C719928884D1A00ACD1DD /* SceneDelegate.swift */; };
+		D30C719F28884D1A00ACD1DD /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30C719D28884D1A00ACD1DD /* Subscription.storyboard */; };
+		D30C71A128884D1D00ACD1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D30C71A028884D1D00ACD1DD /* Assets.xcassets */; };
+		D30C71A428884D1D00ACD1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30C71A228884D1D00ACD1DD /* LaunchScreen.storyboard */; };
+		D30C71AD288AFA3B00ACD1DD /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C71AB288AFA3A00ACD1DD /* CategoryCollectionViewCell.swift */; };
+		D30C71AE288AFA3B00ACD1DD /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30C71AC288AFA3A00ACD1DD /* CategoryCollectionViewCell.xib */; };
+		D30C71B1288AFB0700ACD1DD /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30C71B0288AFB0700ACD1DD /* HomePage.storyboard */; };
+		D30C71B4288AFC0700ACD1DD /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C71B2288AFC0700ACD1DD /* CategoryTableViewCell.swift */; };
+		D30C71B5288AFC0700ACD1DD /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D30C71B3288AFC0700ACD1DD /* CategoryTableViewCell.xib */; };
+		D30C71B7288AFF5400ACD1DD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C71B6288AFF5400ACD1DD /* UIView+Extension.swift */; };
+		D30CFB3C288F564800D86681 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30CFB3B288F564800D86681 /* WelcomeViewController.swift */; };
+		D30CFB3E288F566300D86681 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30CFB3D288F566300D86681 /* SignUpViewController.swift */; };
+		D30CFB40288F569D00D86681 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30CFB3F288F569D00D86681 /* OTPViewController.swift */; };
+		D30CFB42288F56F800D86681 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30CFB41288F56F800D86681 /* LoginViewController.swift */; };
+		D30CFB45288F576E00D86681 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30CFB44288F576E00D86681 /* ForgotPassViewController.swift */; };
+		D30CFB4A288F57B500D86681 /* PassChangedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30CFB49288F57B500D86681 /* PassChangedViewController.swift */; };
+		D3760CC9288B6FAC003DFECA /* BrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3760CC7288B6FAC003DFECA /* BrandTableViewCell.swift */; };
+		D3760CCA288B6FAC003DFECA /* BrandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3760CC8288B6FAC003DFECA /* BrandTableViewCell.xib */; };
+		D37F0107289032EC006BD870 /* ResetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F0106289032EC006BD870 /* ResetPassViewController.swift */; };
+		D3D199F0288B0B6900E9F389 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199DD288B0B6900E9F389 /* Metropolis-Bold.otf */; };
+		D3D199F1288B0B6900E9F389 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = D3D199DE288B0B6900E9F389 /* SIL Open Font License.txt */; };
+		D3D199F2288B0B6900E9F389 /* Metropolis-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199DF288B0B6900E9F389 /* Metropolis-Thin.otf */; };
+		D3D199F3288B0B6900E9F389 /* Metropolis-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E0288B0B6900E9F389 /* Metropolis-RegularItalic.otf */; };
+		D3D199F4288B0B6900E9F389 /* Metropolis-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E1288B0B6900E9F389 /* Metropolis-ExtraBold.otf */; };
+		D3D199F5288B0B6900E9F389 /* Metropolis-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E2288B0B6900E9F389 /* Metropolis-SemiBoldItalic.otf */; };
+		D3D199F6288B0B6900E9F389 /* Metropolis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E3288B0B6900E9F389 /* Metropolis-Light.otf */; };
+		D3D199F7288B0B6900E9F389 /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E4288B0B6900E9F389 /* Metropolis-Regular.otf */; };
+		D3D199F8288B0B6900E9F389 /* Metropolis-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E5288B0B6900E9F389 /* Metropolis-Black.otf */; };
+		D3D199F9288B0B6900E9F389 /* Metropolis-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E6288B0B6900E9F389 /* Metropolis-ExtraLightItalic.otf */; };
+		D3D199FA288B0B6900E9F389 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E7288B0B6900E9F389 /* Metropolis-Medium.otf */; };
+		D3D199FB288B0B6900E9F389 /* Metropolis-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E8288B0B6900E9F389 /* Metropolis-BlackItalic.otf */; };
+		D3D199FC288B0B6900E9F389 /* Metropolis-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199E9288B0B6900E9F389 /* Metropolis-ThinItalic.otf */; };
+		D3D199FD288B0B6900E9F389 /* Metropolis-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199EA288B0B6900E9F389 /* Metropolis-ExtraLight.otf */; };
+		D3D199FE288B0B6900E9F389 /* Metropolis-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199EB288B0B6900E9F389 /* Metropolis-MediumItalic.otf */; };
+		D3D199FF288B0B6900E9F389 /* Metropolis-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199EC288B0B6900E9F389 /* Metropolis-LightItalic.otf */; };
+		D3D19A00288B0B6900E9F389 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199ED288B0B6900E9F389 /* Metropolis-SemiBold.otf */; };
+		D3D19A01288B0B6900E9F389 /* Metropolis-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199EE288B0B6900E9F389 /* Metropolis-BoldItalic.otf */; };
+		D3D19A02288B0B6900E9F389 /* Metropolis-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D199EF288B0B6900E9F389 /* Metropolis-ExtraBoldItalic.otf */; };
+		D3D19A07288B683800E9F389 /* GenderCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D19A05288B683800E9F389 /* GenderCategoryCollectionViewCell.swift */; };
+		D3D19A08288B683800E9F389 /* GenderCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D19A06288B683800E9F389 /* GenderCategoryCollectionViewCell.xib */; };
+		D3E873B3288C3830000D26F7 /* SchoolsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E873B1288C3830000D26F7 /* SchoolsTableViewCell.swift */; };
+		D3E873B4288C3830000D26F7 /* SchoolsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E873B2288C3830000D26F7 /* SchoolsTableViewCell.xib */; };
+		D3E873B9288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E873B7288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.swift */; };
+		D3E873BA288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E873B8288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.xib */; };
+		D3E873BD288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E873BB288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.swift */; };
+		D3E873BE288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E873BC288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.xib */; };
+		D3E873C1288C3FC7000D26F7 /* ProductReview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E873C0288C3FC7000D26F7 /* ProductReview.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D30C719428884D1A00ACD1DD /* E-commers Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-commers Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30C719728884D1A00ACD1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D30C719928884D1A00ACD1DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D30C719E28884D1A00ACD1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Subscription.storyboard; sourceTree = "<group>"; };
+		D30C71A028884D1D00ACD1DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D30C71A328884D1D00ACD1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D30C71A528884D1D00ACD1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30C71AB288AFA3A00ACD1DD /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D30C71AC288AFA3A00ACD1DD /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D30C71B0288AFB0700ACD1DD /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		D30C71B2288AFC0700ACD1DD /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		D30C71B3288AFC0700ACD1DD /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		D30C71B6288AFF5400ACD1DD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D30CFB3B288F564800D86681 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		D30CFB3D288F566300D86681 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D30CFB3F288F569D00D86681 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		D30CFB41288F56F800D86681 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D30CFB44288F576E00D86681 /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
+		D30CFB49288F57B500D86681 /* PassChangedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassChangedViewController.swift; sourceTree = "<group>"; };
+		D3760CC7288B6FAC003DFECA /* BrandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandTableViewCell.swift; sourceTree = "<group>"; };
+		D3760CC8288B6FAC003DFECA /* BrandTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandTableViewCell.xib; sourceTree = "<group>"; };
+		D37F0106289032EC006BD870 /* ResetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassViewController.swift; sourceTree = "<group>"; };
+		D3D199DD288B0B6900E9F389 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		D3D199DE288B0B6900E9F389 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		D3D199DF288B0B6900E9F389 /* Metropolis-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Thin.otf"; sourceTree = "<group>"; };
+		D3D199E0288B0B6900E9F389 /* Metropolis-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-RegularItalic.otf"; sourceTree = "<group>"; };
+		D3D199E1288B0B6900E9F389 /* Metropolis-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraBold.otf"; sourceTree = "<group>"; };
+		D3D199E2288B0B6900E9F389 /* Metropolis-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		D3D199E3288B0B6900E9F389 /* Metropolis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Light.otf"; sourceTree = "<group>"; };
+		D3D199E4288B0B6900E9F389 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		D3D199E5288B0B6900E9F389 /* Metropolis-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Black.otf"; sourceTree = "<group>"; };
+		D3D199E6288B0B6900E9F389 /* Metropolis-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		D3D199E7288B0B6900E9F389 /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		D3D199E8288B0B6900E9F389 /* Metropolis-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-BlackItalic.otf"; sourceTree = "<group>"; };
+		D3D199E9288B0B6900E9F389 /* Metropolis-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ThinItalic.otf"; sourceTree = "<group>"; };
+		D3D199EA288B0B6900E9F389 /* Metropolis-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraLight.otf"; sourceTree = "<group>"; };
+		D3D199EB288B0B6900E9F389 /* Metropolis-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-MediumItalic.otf"; sourceTree = "<group>"; };
+		D3D199EC288B0B6900E9F389 /* Metropolis-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-LightItalic.otf"; sourceTree = "<group>"; };
+		D3D199ED288B0B6900E9F389 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
+		D3D199EE288B0B6900E9F389 /* Metropolis-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-BoldItalic.otf"; sourceTree = "<group>"; };
+		D3D199EF288B0B6900E9F389 /* Metropolis-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		D3D19A05288B683800E9F389 /* GenderCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3D19A06288B683800E9F389 /* GenderCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenderCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		D3E873B1288C3830000D26F7 /* SchoolsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsTableViewCell.swift; sourceTree = "<group>"; };
+		D3E873B2288C3830000D26F7 /* SchoolsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchoolsTableViewCell.xib; sourceTree = "<group>"; };
+		D3E873B7288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSchoolCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3E873B8288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedSchoolCollectionViewCell.xib; sourceTree = "<group>"; };
+		D3E873BB288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2ndSelectedCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3E873BC288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = 2ndSelectedCollectionViewCell.xib; sourceTree = "<group>"; };
+		D3E873C0288C3FC7000D26F7 /* ProductReview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductReview.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D30C719128884D1A00ACD1DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D30C718B28884D1A00ACD1DD = {
+			isa = PBXGroup;
+			children = (
+				D30C719628884D1A00ACD1DD /* E-commers Application */,
+				D30C719528884D1A00ACD1DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D30C719528884D1A00ACD1DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D30C719428884D1A00ACD1DD /* E-commers Application.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D30C719628884D1A00ACD1DD /* E-commers Application */ = {
+			isa = PBXGroup;
+			children = (
+				D30CFB3A288F562900D86681 /* Controllers */,
+				D3E873BF288C3FB1000D26F7 /* ProductReview */,
+				D3D19A03288B0EFB00E9F389 /* Registration */,
+				D30C71BC288B014F00ACD1DD /* Resources */,
+				D30C71BB288B013200ACD1DD /* Extensions */,
+				D30C71B8288B010600ACD1DD /* Home */,
+				D30C719728884D1A00ACD1DD /* AppDelegate.swift */,
+				D30C719928884D1A00ACD1DD /* SceneDelegate.swift */,
+			);
+			path = "E-commers Application";
+			sourceTree = "<group>";
+		};
+		D30C71B8288B010600ACD1DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D30C71BA288B012000ACD1DD /* Storyboard */,
+				D30C71B9288B011600ACD1DD /* Cells */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D30C71B9288B011600ACD1DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D30C71AB288AFA3A00ACD1DD /* CategoryCollectionViewCell.swift */,
+				D30C71AC288AFA3A00ACD1DD /* CategoryCollectionViewCell.xib */,
+				D30C71B2288AFC0700ACD1DD /* CategoryTableViewCell.swift */,
+				D30C71B3288AFC0700ACD1DD /* CategoryTableViewCell.xib */,
+				D3D19A05288B683800E9F389 /* GenderCategoryCollectionViewCell.swift */,
+				D3D19A06288B683800E9F389 /* GenderCategoryCollectionViewCell.xib */,
+				D3760CC7288B6FAC003DFECA /* BrandTableViewCell.swift */,
+				D3760CC8288B6FAC003DFECA /* BrandTableViewCell.xib */,
+				D3E873B1288C3830000D26F7 /* SchoolsTableViewCell.swift */,
+				D3E873B2288C3830000D26F7 /* SchoolsTableViewCell.xib */,
+				D3E873B7288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.swift */,
+				D3E873B8288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.xib */,
+				D3E873BB288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.swift */,
+				D3E873BC288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D30C71BA288B012000ACD1DD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D30C71B0288AFB0700ACD1DD /* HomePage.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D30C71BB288B013200ACD1DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D30C71B6288AFF5400ACD1DD /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D30C71BC288B014F00ACD1DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3D199DC288B0B6900E9F389 /* metropolis */,
+				D30C71A528884D1D00ACD1DD /* Info.plist */,
+				D30C71A228884D1D00ACD1DD /* LaunchScreen.storyboard */,
+				D30C71A028884D1D00ACD1DD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D30CFB39288F3AC700D86681 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D30CFB3A288F562900D86681 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D30CFB3B288F564800D86681 /* WelcomeViewController.swift */,
+				D30CFB3D288F566300D86681 /* SignUpViewController.swift */,
+				D30CFB3F288F569D00D86681 /* OTPViewController.swift */,
+				D30CFB41288F56F800D86681 /* LoginViewController.swift */,
+				D30CFB44288F576E00D86681 /* ForgotPassViewController.swift */,
+				D37F0106289032EC006BD870 /* ResetPassViewController.swift */,
+				D30CFB49288F57B500D86681 /* PassChangedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D3D199DC288B0B6900E9F389 /* metropolis */ = {
+			isa = PBXGroup;
+			children = (
+				D30CFB39288F3AC700D86681 /* Fonts */,
+				D3D199DD288B0B6900E9F389 /* Metropolis-Bold.otf */,
+				D3D199DE288B0B6900E9F389 /* SIL Open Font License.txt */,
+				D3D199DF288B0B6900E9F389 /* Metropolis-Thin.otf */,
+				D3D199E0288B0B6900E9F389 /* Metropolis-RegularItalic.otf */,
+				D3D199E1288B0B6900E9F389 /* Metropolis-ExtraBold.otf */,
+				D3D199E2288B0B6900E9F389 /* Metropolis-SemiBoldItalic.otf */,
+				D3D199E3288B0B6900E9F389 /* Metropolis-Light.otf */,
+				D3D199E4288B0B6900E9F389 /* Metropolis-Regular.otf */,
+				D3D199E5288B0B6900E9F389 /* Metropolis-Black.otf */,
+				D3D199E6288B0B6900E9F389 /* Metropolis-ExtraLightItalic.otf */,
+				D3D199E7288B0B6900E9F389 /* Metropolis-Medium.otf */,
+				D3D199E8288B0B6900E9F389 /* Metropolis-BlackItalic.otf */,
+				D3D199E9288B0B6900E9F389 /* Metropolis-ThinItalic.otf */,
+				D3D199EA288B0B6900E9F389 /* Metropolis-ExtraLight.otf */,
+				D3D199EB288B0B6900E9F389 /* Metropolis-MediumItalic.otf */,
+				D3D199EC288B0B6900E9F389 /* Metropolis-LightItalic.otf */,
+				D3D199ED288B0B6900E9F389 /* Metropolis-SemiBold.otf */,
+				D3D199EE288B0B6900E9F389 /* Metropolis-BoldItalic.otf */,
+				D3D199EF288B0B6900E9F389 /* Metropolis-ExtraBoldItalic.otf */,
+			);
+			path = metropolis;
+			sourceTree = "<group>";
+		};
+		D3D19A03288B0EFB00E9F389 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				D3D19A04288B0F1200E9F389 /* Storyboard */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		D3D19A04288B0F1200E9F389 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D30C719D28884D1A00ACD1DD /* Subscription.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D3E873BF288C3FB1000D26F7 /* ProductReview */ = {
+			isa = PBXGroup;
+			children = (
+				D3E873C0288C3FC7000D26F7 /* ProductReview.storyboard */,
+			);
+			path = ProductReview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D30C719328884D1A00ACD1DD /* E-commers Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30C71A828884D1D00ACD1DD /* Build configuration list for PBXNativeTarget "E-commers Application" */;
+			buildPhases = (
+				D30C719028884D1A00ACD1DD /* Sources */,
+				D30C719128884D1A00ACD1DD /* Frameworks */,
+				D30C719228884D1A00ACD1DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "E-commers Application";
+			productName = "E-commers Application";
+			productReference = D30C719428884D1A00ACD1DD /* E-commers Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D30C718C28884D1A00ACD1DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D30C719328884D1A00ACD1DD = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D30C718F28884D1A00ACD1DD /* Build configuration list for PBXProject "E-commers Application" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D30C718B28884D1A00ACD1DD;
+			productRefGroup = D30C719528884D1A00ACD1DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D30C719328884D1A00ACD1DD /* E-commers Application */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D30C719228884D1A00ACD1DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30C71B1288AFB0700ACD1DD /* HomePage.storyboard in Resources */,
+				D3D199FB288B0B6900E9F389 /* Metropolis-BlackItalic.otf in Resources */,
+				D3E873C1288C3FC7000D26F7 /* ProductReview.storyboard in Resources */,
+				D3760CCA288B6FAC003DFECA /* BrandTableViewCell.xib in Resources */,
+				D3D19A01288B0B6900E9F389 /* Metropolis-BoldItalic.otf in Resources */,
+				D3D199F2288B0B6900E9F389 /* Metropolis-Thin.otf in Resources */,
+				D30C71A428884D1D00ACD1DD /* LaunchScreen.storyboard in Resources */,
+				D3D199F9288B0B6900E9F389 /* Metropolis-ExtraLightItalic.otf in Resources */,
+				D3D199F6288B0B6900E9F389 /* Metropolis-Light.otf in Resources */,
+				D3E873BE288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.xib in Resources */,
+				D3D199FE288B0B6900E9F389 /* Metropolis-MediumItalic.otf in Resources */,
+				D30C71A128884D1D00ACD1DD /* Assets.xcassets in Resources */,
+				D3D199F8288B0B6900E9F389 /* Metropolis-Black.otf in Resources */,
+				D3D19A00288B0B6900E9F389 /* Metropolis-SemiBold.otf in Resources */,
+				D3D199F5288B0B6900E9F389 /* Metropolis-SemiBoldItalic.otf in Resources */,
+				D3D199FF288B0B6900E9F389 /* Metropolis-LightItalic.otf in Resources */,
+				D3D199F1288B0B6900E9F389 /* SIL Open Font License.txt in Resources */,
+				D3E873B4288C3830000D26F7 /* SchoolsTableViewCell.xib in Resources */,
+				D30C71B5288AFC0700ACD1DD /* CategoryTableViewCell.xib in Resources */,
+				D3D199FD288B0B6900E9F389 /* Metropolis-ExtraLight.otf in Resources */,
+				D3D19A02288B0B6900E9F389 /* Metropolis-ExtraBoldItalic.otf in Resources */,
+				D3D199F3288B0B6900E9F389 /* Metropolis-RegularItalic.otf in Resources */,
+				D3E873BA288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.xib in Resources */,
+				D3D19A08288B683800E9F389 /* GenderCategoryCollectionViewCell.xib in Resources */,
+				D30C71AE288AFA3B00ACD1DD /* CategoryCollectionViewCell.xib in Resources */,
+				D3D199F7288B0B6900E9F389 /* Metropolis-Regular.otf in Resources */,
+				D3D199FC288B0B6900E9F389 /* Metropolis-ThinItalic.otf in Resources */,
+				D3D199FA288B0B6900E9F389 /* Metropolis-Medium.otf in Resources */,
+				D3D199F4288B0B6900E9F389 /* Metropolis-ExtraBold.otf in Resources */,
+				D3D199F0288B0B6900E9F389 /* Metropolis-Bold.otf in Resources */,
+				D30C719F28884D1A00ACD1DD /* Subscription.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D30C719028884D1A00ACD1DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30CFB42288F56F800D86681 /* LoginViewController.swift in Sources */,
+				D37F0107289032EC006BD870 /* ResetPassViewController.swift in Sources */,
+				D30CFB4A288F57B500D86681 /* PassChangedViewController.swift in Sources */,
+				D30C71B7288AFF5400ACD1DD /* UIView+Extension.swift in Sources */,
+				D30C71B4288AFC0700ACD1DD /* CategoryTableViewCell.swift in Sources */,
+				D30CFB40288F569D00D86681 /* OTPViewController.swift in Sources */,
+				D30CFB45288F576E00D86681 /* ForgotPassViewController.swift in Sources */,
+				D30CFB3C288F564800D86681 /* WelcomeViewController.swift in Sources */,
+				D3E873BD288C3D20000D26F7 /* 2ndSelectedCollectionViewCell.swift in Sources */,
+				D3760CC9288B6FAC003DFECA /* BrandTableViewCell.swift in Sources */,
+				D3E873B3288C3830000D26F7 /* SchoolsTableViewCell.swift in Sources */,
+				D30CFB3E288F566300D86681 /* SignUpViewController.swift in Sources */,
+				D3E873B9288C3A1A000D26F7 /* SelectedSchoolCollectionViewCell.swift in Sources */,
+				D3D19A07288B683800E9F389 /* GenderCategoryCollectionViewCell.swift in Sources */,
+				D30C719828884D1A00ACD1DD /* AppDelegate.swift in Sources */,
+				D30C71AD288AFA3B00ACD1DD /* CategoryCollectionViewCell.swift in Sources */,
+				D30C719A28884D1A00ACD1DD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D30C719D28884D1A00ACD1DD /* Subscription.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30C719E28884D1A00ACD1DD /* Base */,
+			);
+			name = Subscription.storyboard;
+			sourceTree = "<group>";
+		};
+		D30C71A228884D1D00ACD1DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D30C71A328884D1D00ACD1DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D30C71A628884D1D00ACD1DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D30C71A728884D1D00ACD1DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D30C71A928884D1D00ACD1DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "E-commers Application/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Subscription;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DemeRy.E-commers-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D30C71AA28884D1D00ACD1DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "E-commers Application/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Subscription;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DemeRy.E-commers-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D30C718F28884D1A00ACD1DD /* Build configuration list for PBXProject "E-commers Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30C71A628884D1D00ACD1DD /* Debug */,
+				D30C71A728884D1D00ACD1DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30C71A828884D1D00ACD1DD /* Build configuration list for PBXNativeTarget "E-commers Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D30C71A928884D1D00ACD1DD /* Debug */,
+				D30C71AA28884D1D00ACD1DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D30C718C28884D1A00ACD1DD /* Project object */;
+}
